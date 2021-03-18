@@ -19,7 +19,7 @@ public class TokenResource {
     private AlgamoneyApiProperty algamoneyApiProperty;
 
     @DeleteMapping("/revoke")
-    public void revoke(HttpServletRequest req, HttpServletResponse resp) {
+    public void rvoke(HttpServletRequest req, HttpServletResponse resp) {
         Cookie cookie = new Cookie("refreshToken", null);
         cookie.setHttpOnly(true);
         cookie.setSecure(algamoneyApiProperty.getSeguranca().isEnableHttps());

@@ -1,13 +1,13 @@
 package com.example.algamoney.api.config.token;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import com.example.algamoney.api.security.UsuarioSistema;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.token.TokenEnhancer;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class CustomTokenEnhancer implements TokenEnhancer {
 
@@ -23,3 +23,4 @@ public class CustomTokenEnhancer implements TokenEnhancer {
     }
 
 }
+

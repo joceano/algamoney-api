@@ -1,4 +1,4 @@
-package com.example.algamoney.api.Service;
+package com.example.algamoney.api.service;
 
 import com.example.algamoney.api.model.Pessoa;
 import com.example.algamoney.api.repository.PessoaRepository;
@@ -25,7 +25,7 @@ public class PessoaService {
         pessoaRepository.save(pessoaSalva);
     }
 
-    public Pessoa buscarPessoaPeloCodigo(Long codigo) {
+    private Pessoa buscarPessoaPeloCodigo(Long codigo) {
         Pessoa pessoaSalva = pessoaRepository.findOne(codigo);
         if (pessoaSalva == null) {
             throw new EmptyResultDataAccessException(1);

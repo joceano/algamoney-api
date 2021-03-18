@@ -1,38 +1,27 @@
 package com.example.algamoney.api.config.property;
 
-
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties("algamoney")
 public class AlgamoneyApiProperty {
 
-    private String originPermitida = "http://localhost:4200";
-
+    @Getter
     private final Seguranca seguranca = new Seguranca();
 
-    public Seguranca getSeguranca() {
-        return seguranca;
-    }
+    @Getter
+    private final Origin origin = new Origin();
 
-    public String getOriginPermitida() {
-        return originPermitida;
-    }
-
-    public void setOriginPermitida(String originPermitida) {
-        this.originPermitida = originPermitida;
-    }
-
+    @Getter
+    @Setter
     public static class Seguranca {
-
         private boolean enableHttps;
-
-        public boolean isEnableHttps() {
-            return enableHttps;
-        }
-
-        public void setEnableHttps(boolean enableHttps) {
-            this.enableHttps = enableHttps;
-        }
     }
 
+    @Getter
+    @Setter
+    public static class Origin {
+        private String originPermitida = "http://localhost:8000";
+    }
 }

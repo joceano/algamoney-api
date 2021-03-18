@@ -1,10 +1,15 @@
 package com.example.algamoney.api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+@EqualsAndHashCode(of = "codigo")
+@Data
 @Entity
 @Table(name = "pessoa")
 public class Pessoa {
@@ -14,6 +19,7 @@ public class Pessoa {
     private Long codigo;
 
     @NotNull
+    @Size(min = 3, max = 50)
     private String nome;
 
     @Embedded
@@ -22,56 +28,9 @@ public class Pessoa {
     @NotNull
     private Boolean ativo;
 
-    public Long getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(Long codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public Endereco getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
-    }
-
-    public Boolean getAtivo() {
-        return ativo;
-    }
-
-    public void setAtivo(Boolean ativo) {
-        this.ativo = ativo;
-    }
-
     @JsonIgnore
     @Transient
     public boolean isInativo() {
         return !this.ativo;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Pessoa pessoa = (Pessoa) o;
-
-        return codigo != null ? codigo.equals(pessoa.codigo) : pessoa.codigo == null;
-    }
-
-    @Override
-    public int hashCode() {
-        return codigo != null ? codigo.hashCode() : 0;
     }
 }

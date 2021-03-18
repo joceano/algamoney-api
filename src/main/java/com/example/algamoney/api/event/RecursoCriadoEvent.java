@@ -1,9 +1,11 @@
 package com.example.algamoney.api.event;
 
+import lombok.Getter;
 import org.springframework.context.ApplicationEvent;
 
 import javax.servlet.http.HttpServletResponse;
 
+@Getter
 public class RecursoCriadoEvent extends ApplicationEvent {
 
     private HttpServletResponse response;
@@ -13,13 +15,5 @@ public class RecursoCriadoEvent extends ApplicationEvent {
         super(source);
         this.response = response;
         this.codigo = codigo;
-    }
-
-    public HttpServletResponse getResponse() {
-        return response;
-    }
-
-    public Long getCodigo() {
-        return codigo;
     }
 }

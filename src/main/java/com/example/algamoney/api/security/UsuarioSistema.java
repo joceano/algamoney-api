@@ -1,12 +1,12 @@
 package com.example.algamoney.api.security;
 
-import java.util.Collection;
-
+import com.example.algamoney.api.model.Usuario;
+import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
+import java.util.Collection;
 
-import com.example.algamoney.api.model.Usuario;
-
+@Getter
 public class UsuarioSistema extends User {
 
     private static final long serialVersionUID = 1L;
@@ -18,7 +18,4 @@ public class UsuarioSistema extends User {
         this.usuario = usuario;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
 }
