@@ -22,6 +22,6 @@ public class AlgamoneyApiProperty {
     @Getter
     @Setter
     public static class Origin {
-        private String originPermitida = "http://localhost:8000";
+        private String originPermitida = "http://localhost:4200";
     }
 }
