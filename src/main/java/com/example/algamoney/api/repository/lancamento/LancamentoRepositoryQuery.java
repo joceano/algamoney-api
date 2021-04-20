@@ -2,6 +2,7 @@ package com.example.algamoney.api.repository.lancamento;
 
 import com.example.algamoney.api.dto.LancamentoEstatisticaCategoria;
 import com.example.algamoney.api.dto.LancamentoEstatisticaDia;
+import com.example.algamoney.api.dto.LancamentoEstatisticaPessoa;
 import com.example.algamoney.api.model.Lancamento;
 import com.example.algamoney.api.repository.filter.LancamentoFilter;
 import com.example.algamoney.api.repository.projection.ResumoLancamento;
@@ -13,6 +14,7 @@ import java.util.List;
 
 public interface LancamentoRepositoryQuery {
 
+    public List<LancamentoEstatisticaPessoa> porPessoa(LocalDate inicio, LocalDate fim);
     public List<LancamentoEstatisticaCategoria> porCategoria(LocalDate mesReferencia);
     public List<LancamentoEstatisticaDia> porDia(LocalDate mesReferencia);
 

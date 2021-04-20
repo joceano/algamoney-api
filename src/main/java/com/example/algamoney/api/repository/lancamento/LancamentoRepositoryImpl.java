@@ -2,6 +2,7 @@ package com.example.algamoney.api.repository.lancamento;
 
 import com.example.algamoney.api.dto.LancamentoEstatisticaCategoria;
 import com.example.algamoney.api.dto.LancamentoEstatisticaDia;
+import com.example.algamoney.api.dto.LancamentoEstatisticaPessoa;
 import com.example.algamoney.api.event.RestricaoDePaginacaoEvent;
 import com.example.algamoney.api.model.Categoria_;
 import com.example.algamoney.api.model.Lancamento;
@@ -34,6 +35,35 @@ public class LancamentoRepositoryImpl implements LancamentoRepositoryQuery{
 
     @Autowired
     private ApplicationEventPublisher publisher;
+
+    @Override
+    public List<LancamentoEstatisticaPessoa> porPessoa(LocalDate inicio, LocalDate fim) {
+        CriteriaBuilder criteriaBuilder = manager.getCriteriaBuilder();
+
+        CriteriaQuery<LancamentoEstatisticaPessoa> criteriaQuery = criteriaBuilder
+                .createQuery(LancamentoEstatisticaPessoa.class);
+
+        Root<Lancamento> root = criteriaQuery.from(Lancamento.class);
+
+        criteriaQuery.select(criteriaBuilder.construct(LancamentoEstatisticaPessoa.class,
+                root.get(Lancamento_.tipo),
+                root.get(Lancamento_.pessoa),
+                criteriaBuilder.sum(root.get(Lancamento_.valor))));
+
+        criteriaQuery.where(
+                criteriaBuilder.greaterThanOrEqualTo(root.get(Lancamento_.dataVencimento), inicio),
+                criteriaBuilder.lessThanOrEqualTo(root.get(Lancamento_.dataVencimento), fim)
+        );
+
+        criteriaQuery.groupBy(
+                root.get(Lancamento_.tipo),
+                root.get(Lancamento_.pessoa)
+        );
+
+        TypedQuery<LancamentoEstatisticaPessoa> typedQuery = manager.createQuery(criteriaQuery);
+
+        return typedQuery.getResultList();
+    }
 
     @Override
     public List<LancamentoEstatisticaCategoria> porCategoria(LocalDate mesReferencia) {
