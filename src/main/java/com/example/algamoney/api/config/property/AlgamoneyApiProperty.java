@@ -14,6 +14,9 @@ public class AlgamoneyApiProperty {
     private final Origin origin = new Origin();
 
     @Getter
+    private final Mail mail = new Mail();
+
+    @Getter
     @Setter
     public static class Seguranca {
         private boolean enableHttps;
@@ -23,5 +26,14 @@ public class AlgamoneyApiProperty {
     @Setter
     public static class Origin {
         private String originPermitida = "http://localhost:4200";
+    }
+
+    @Getter
+    @Setter
+    public static class Mail {
+        private String host;
+        private Integer port;
+        private String username;
+        private String password;
     }
 }
