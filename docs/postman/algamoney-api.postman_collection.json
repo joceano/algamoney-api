@@ -141,16 +141,22 @@
 					"name": "Buscar pessoa",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzM3NTc4LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiIxYTNlNWZiNS00N2EwLTQ1MTMtYWVmYy0wZmQ4M2JlOGI3NmUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.1TZqrh37ASwhVPrYv8TgyL1tnx9Dc2qZ2GPaYg_HjMs",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "localhost:8080/pessoas/2",
+							"raw": "localhost:8080/pessoas/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"pessoas",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -160,10 +166,16 @@
 					"name": "Criar pessoa",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzM3NTc4LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiIxYTNlNWZiNS00N2EwLTQ1MTMtYWVmYy0wZmQ4M2JlOGI3NmUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.1TZqrh37ASwhVPrYv8TgyL1tnx9Dc2qZ2GPaYg_HjMs",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"José Borba\",\r\n    \"ativo\": true\r\n}",
+							"raw": "{\r\n    \"nome\": \"Mariane\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua do Abacaxi\",\r\n        \"numero\": \"10\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Brasil\",\r\n        \"cep\": \"38.400-12\",\r\n        \"cidade\": \"Uberlândia\",\r\n        \"estado\": \"MG\"\r\n    },\r\n    \"ativo\": true,\r\n    \"contatos\": [\r\n        {\r\n            \"nome\": \"Marcos Henrique\",\r\n            \"email\": \"marcos@algamoney.com\",\r\n            \"telefone\": \"00 0000-0000\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -187,16 +199,22 @@
 					"name": "Deletar pessoa",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzM3NTc4LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiIxYTNlNWZiNS00N2EwLTQ1MTMtYWVmYy0wZmQ4M2JlOGI3NmUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.1TZqrh37ASwhVPrYv8TgyL1tnx9Dc2qZ2GPaYg_HjMs",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "localhost:8080/pessoas/13",
+							"raw": "localhost:8080/pessoas/16",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"pessoas",
-								"13"
+								"16"
 							]
 						}
 					},
@@ -206,10 +224,16 @@
 					"name": "Atualizar pessoa",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzM3NTc4LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiIxYTNlNWZiNS00N2EwLTQ1MTMtYWVmYy0wZmQ4M2JlOGI3NmUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.1TZqrh37ASwhVPrYv8TgyL1tnx9Dc2qZ2GPaYg_HjMs",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"João Silva Antunes\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua do Abacaxi\",\r\n        \"numero\": \"12\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Brasil\",\r\n        \"cep\": \"38.400-12\",\r\n        \"cidade\": \"Juiz de Fora\",\r\n        \"estado\": \"MG\"\r\n    },\r\n    \"ativo\": true\r\n}",
+							"raw": "{\r\n    \"codigo\": 16,\r\n    \"nome\": \"Mariane Borba\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua do Abacaxi\",\r\n        \"numero\": \"10\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Brasil\",\r\n        \"cep\": \"38.400-12\",\r\n        \"cidade\": \"Uberlândia\",\r\n        \"estado\": \"MG\"\r\n    },\r\n    \"ativo\": true,\r\n    \"contatos\": [\r\n        {\r\n            \"nome\": \"Marcos Henrique\",\r\n            \"email\": \"marcos@algamoney.com\",\r\n            \"telefone\": \"00 0000-0000\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -217,14 +241,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/pessoas/1",
+							"raw": "localhost:8080/pessoas/16",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"pessoas",
-								"1"
+								"16"
 							]
 						}
 					},
