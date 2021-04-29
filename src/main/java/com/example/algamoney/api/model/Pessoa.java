@@ -5,8 +5,10 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @EqualsAndHashCode(of = "codigo")
 @Data
@@ -27,6 +29,10 @@ public class Pessoa {
 
     @NotNull
     private Boolean ativo;
+
+    @Valid
+    @OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
+    private List<Contato> contatos;
 
     @JsonIgnore
     @Transient
