@@ -334,19 +334,19 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer 83597693-fc65-4f07-bfbf-e6e068905646",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzQwMTI0LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiJhNWE4ZWI1MC0wODMzLTQxYWUtOTUzYi05MjMxYWRmYTRlNWUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.idhCrgkHmZwu2LjQwCw6HXGWlE2ojk_mMiJm5CJ8s80",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "localhost:8080/lancamentos/2",
+							"raw": "localhost:8080/lancamentos/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"lancamentos",
-								"2"
+								"1"
 							],
 							"query": [
 								{
@@ -700,6 +700,41 @@
 							"body": "%PDF-1.5\n%����\n3 0 obj\n<</Filter/FlateDecode/Length 552>>stream\nx�͖ώ�0\u0010��<�\u001cr�J+glcC�]m[)�a�p[�@\t�b\u0005q\nh��=T}��\u0010�$J�(\u001c�D�\u0010���3?�:\u000f��%�(!�9�\u0002��`m����c~}�A�9��\u0014(B���}\b�Ln��\u0010e}\u0011�D\n��VȘ\u0011bu:u�?a\u0016�KU�A�p��B���\u0001�R\u0019R\u001f��ou(�!��\u0014�����w=�\u001bG�s�=8\u001f�'�_uJ%�|ie\b\u001e\u0017�9�\u0013U����\u0018�g$69::\u001f��U�18\u001d��0m��!r^��[�6�2E�\u000bE���6˚��޶ߜkb�\u0013���k�\t$�\u000f�ˉKOA�x\u000b���\u0002h�i�\u0013�G|�*�ot\u0012L\u001056#U����岳���1�h۱��m��Ţ'\u0016�Şۉ��^lx����dU�5g�(���l�(N�[�Oq�g�~+�&��͠�\u0015�c�ZH��t�8\u0003l\u0014\u001bؤo�<t�5�M\u0010��XL\u0016��5�M\u0010k�tv\u000b[\u001dO�M����Ǹ�/�9`\u001b��$Q��\u0014<�y���\u00107�`D����ۉ3�j��\u0013��Z{��Ţ'\u0016��-e-q�bC�얷:�D�\u001cZ\tf$n�g��8�+���ǅ�\u0012>���L�\r\u001ao\u0016��)K��R���P%�2\u0004�Z�k��\u001d����;�h��\u000f��k�\nendstream\nendobj\n1 0 obj\n<</Tabs/S/Group<</S/Transparency/Type/Group/CS/DeviceRGB>>/Contents 3 0 R/Type/Page/Resources<</ColorSpace<</CS/DeviceRGB>>/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]/Font<</F1 2 0 R>>>>/Parent 4 0 R/MediaBox[0 0 595 842]>>\nendobj\n5 0 obj\n[1 0 R/XYZ 0 852 0]\nendobj\n2 0 obj\n<</Subtype/Type1/Type/Font/BaseFont/Helvetica/Encoding/WinAnsiEncoding>>\nendobj\n4 0 obj\n<</Kids[1 0 R]/Type/Pages/Count 1/ITXT(2.1.7)>>\nendobj\n6 0 obj\n<</Names[(JR_PAGE_ANCHOR_0_1) 5 0 R]>>\nendobj\n7 0 obj\n<</Dests 6 0 R>>\nendobj\n8 0 obj\n<</Names 7 0 R/Type/Catalog/Pages 4 0 R/ViewerPreferences<</PrintScaling/AppDefault>>>>\nendobj\n9 0 obj\n<</ModDate(D:20210419221206-03'00')/Creator(JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928)/CreationDate(D:20210419221206-03'00')/Producer(iText 2.1.7 by 1T3XT)>>\nendobj\nxref\n0 10\n0000000000 65535 f \n0000000634 00000 n \n0000000910 00000 n \n0000000015 00000 n \n0000000998 00000 n \n0000000875 00000 n \n0000001061 00000 n \n0000001115 00000 n \n0000001147 00000 n \n0000001250 00000 n \ntrailer\n<</Info 9 0 R/ID [<17f6c5cf2953ee8749e8372b8bb14c77><d8d027e7d84c3b74d6b756dffc6ddc25>]/Root 8 0 R/Size 10>>\nstartxref\n1459\n%%EOF\n"
 						}
 					]
+				},
+				{
+					"name": "Anexo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzQwMTI0LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiJhNWE4ZWI1MC0wODMzLTQxYWUtOTUzYi05MjMxYWRmYTRlNWUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.idhCrgkHmZwu2LjQwCw6HXGWlE2ojk_mMiJm5CJ8s80",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "anexo",
+									"type": "file",
+									"src": "/D:/Google Drive/Caixa/Comprovantes/GIP/01_2021.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8080/lancamentos/anexo",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lancamentos",
+								"anexo"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
