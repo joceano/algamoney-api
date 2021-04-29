@@ -1,6 +1,7 @@
 package com.example.algamoney.api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -45,6 +46,7 @@ public class Lancamento {
 
     @NotNull
     @ManyToOne
+    @JsonIgnoreProperties("contatos")
     @JoinColumn(name = "codigo_pessoa")
     private Pessoa pessoa;
 
