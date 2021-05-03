@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -69,6 +70,20 @@ public class S3 {
                 new ObjectTagging(Collections.emptyList()));
 
         amazonS3.setObjectTagging(setObjectTaggingRequest);
+    }
+
+    public void remover(String objeto) {
+        DeleteObjectRequest deleteObjectRequest = new DeleteObjectRequest(
+                property.getS3().getBucket(), objeto);
+
+        amazonS3.deleteObject(deleteObjectRequest);
+    }
+
+    public void substituir(String objetoAntigo, String objetoNovo) {
+        if (StringUtils.hasText(objetoAntigo)) {
+            this.remover(objetoAntigo);
+        }
+        salvar(objetoNovo);
     }
 
     private String gerarNomeUnico(String originalFilename) {
