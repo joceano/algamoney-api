@@ -50,6 +50,11 @@ public class Lancamento {
     @JoinColumn(name = "codigo_pessoa")
     private Pessoa pessoa;
 
+    private String anexo;
+
+    @Transient
+    private String urlAnexo;
+
     @JsonIgnore
     public boolean isReceita() {
         return TipoLancamento.RECEITA.equals(this.tipo);
