@@ -1,5 +1,6 @@
 package com.example.algamoney.api.model;
 
+import com.example.algamoney.api.event.listener.LancamentoAnexoListener;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
@@ -10,6 +11,7 @@ import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@EntityListeners(LancamentoAnexoListener.class)
 @EqualsAndHashCode(of = "codigo")
 @Data
 @Entity
