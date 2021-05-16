@@ -144,7 +144,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzM3NTc4LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiIxYTNlNWZiNS00N2EwLTQ1MTMtYWVmYy0wZmQ4M2JlOGI3NmUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.1TZqrh37ASwhVPrYv8TgyL1tnx9Dc2qZ2GPaYg_HjMs",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjIxMTkwOTMyLCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiJhMWYzY2IxMy0wMjc1LTQ5NTQtYWJkYy04NmI3N2E3NDZhNGEiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.VUh-jEulskiG_DQnn8h0oVFYGjHzPHZ5JgFXcsI00LM",
 								"type": "text"
 							}
 						],
@@ -227,13 +227,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjE5NzM3NTc4LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiIxYTNlNWZiNS00N2EwLTQ1MTMtYWVmYy0wZmQ4M2JlOGI3NmUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.1TZqrh37ASwhVPrYv8TgyL1tnx9Dc2qZ2GPaYg_HjMs",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjIxMTkwOTMyLCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiJhMWYzY2IxMy0wMjc1LTQ5NTQtYWJkYy04NmI3N2E3NDZhNGEiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.VUh-jEulskiG_DQnn8h0oVFYGjHzPHZ5JgFXcsI00LM",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"codigo\": 16,\r\n    \"nome\": \"Mariane Borba\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua do Abacaxi\",\r\n        \"numero\": \"10\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Brasil\",\r\n        \"cep\": \"38.400-12\",\r\n        \"cidade\": \"Uberlândia\",\r\n        \"estado\": \"MG\"\r\n    },\r\n    \"ativo\": true,\r\n    \"contatos\": [\r\n        {\r\n            \"nome\": \"Marcos Henrique\",\r\n            \"email\": \"marcos@algamoney.com\",\r\n            \"telefone\": \"00 0000-0000\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"codigo\": 1,\r\n    \"nome\": \"João Silva\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua do Abacaxi\",\r\n        \"numero\": \"10\",\r\n        \"complemento\": null,\r\n        \"bairro\": \"Brasil\",\r\n        \"cep\": \"38.400-12\",\r\n        \"cidade\": {\r\n            \"codigo\": 1,\r\n            \"nome\": \"Uberlândia\",\r\n            \"estado\": {\r\n                \"codigo\": 11,\r\n                \"nome\": \"Minas Gerais\"\r\n            }\r\n        }\r\n    },\r\n    \"ativo\": true,\r\n    \"contatos\": [\r\n        {\r\n            \"codigo\": 1,\r\n            \"nome\": \"Marcos Henrique\",\r\n            \"email\": \"marcos@algamoney.com\",\r\n            \"telefone\": \"00 0000-0000\"\r\n        },\r\n        {\r\n            \"codigo\": 4,\r\n            \"nome\": \"Joceano Alves de Borba\",\r\n            \"email\": \"alves.joceano@gmail.com\",\r\n            \"telefone\": \"(46) 98808-6928\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -241,14 +241,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/pessoas/16",
+							"raw": "localhost:8080/pessoas/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
 								"pessoas",
-								"16"
+								"1"
 							]
 						}
 					},
@@ -994,6 +994,70 @@
 							],
 							"path": [
 								"lancamentos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cidade",
+			"item": [
+				{
+					"name": "Buscar cidades",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjIxMTkxNzc0LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiI3NjNjOTE0Ni01ZDk4LTQ4YmUtYTQyMi00OWEzNGRkYzIzNWUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.6kRVAaMrfxnFvgd5ArfjPC2K7o-2TyZVDm1-BUtTujI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/cidades?estado=11",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cidades"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estado",
+			"item": [
+				{
+					"name": "Listar estados",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbkBhbGdhbW9uZXkuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sIm5vbWUiOiJBZG1pbmlzdHJhZG9yIiwiZXhwIjoxNjIxMTkxNzc0LCJhdXRob3JpdGllcyI6WyJST0xFX0NBREFTVFJBUl9DQVRFR09SSUEiLCJST0xFX1BFU1FVSVNBUl9QRVNTT0EiLCJST0xFX1JFTU9WRVJfUEVTU09BIiwiUk9MRV9DQURBU1RSQVJfTEFOQ0FNRU5UTyIsIlJPTEVfUEVTUVVJU0FSX0xBTkNBTUVOVE8iLCJST0xFX1JFTU9WRVJfTEFOQ0FNRU5UTyIsIlJPTEVfQ0FEQVNUUkFSX1BFU1NPQSIsIlJPTEVfUEVTUVVJU0FSX0NBVEVHT1JJQSJdLCJqdGkiOiI3NjNjOTE0Ni01ZDk4LTQ4YmUtYTQyMi00OWEzNGRkYzIzNWUiLCJjbGllbnRfaWQiOiJhbmd1bGFyIn0.6kRVAaMrfxnFvgd5ArfjPC2K7o-2TyZVDm1-BUtTujI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/estados",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"estados"
 							]
 						}
 					},
